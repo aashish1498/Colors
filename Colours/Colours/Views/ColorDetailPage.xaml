@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Colours.Views.ColorDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="Name:" FontSize="Medium" />
+        <Label Text="{Binding Color.ColorName}" FontSize="Small"/>
+        <Label Text="Code:" FontSize="Medium" />
+        <Label Text="{Binding Color.ColorCodeString}" FontSize="Small"/>
+        <Button Text="Remove" Clicked="Remove_Clicked" FontSize="Small"/>
+        <BoxView Margin="0,50,0,0" HeightRequest="50" BackgroundColor="{Binding Color.ColorCode}"></BoxView>
+    </StackLayout>
+    
+</ContentPage>
